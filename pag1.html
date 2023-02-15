@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carnaval de Florianópolis</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script language="javascript"> 
+        function setCookie(nome, valor, dias){ 
+        diasms = (new Date()) .getTime() + 1000 * 3600 * 24 * dias; 
+        dias = new Date(diasms); 
+        expires = dias.toGMTString(); 
+        document.cookie = escape(nome) + "=" + escape(valor) + "; expires=" + expires; 
+        } 
+    </script>
+    
+</head>
+<body>
+
+    
+    <header>
+        <h1 class="titulo">Carnaval de Florianópolis</h1>
+        <nav>
+            <ul class="mainUl">
+                <li style="padding-right: 10px;">Home</li>
+                <li style="padding-right: 10px;"><a href="pag2.html">Eventos</a></li>
+                <li><a href="pag3.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Carnaval 2023</h1>
+        <p>Segundo o prefeito Topázio Neto, o Carnaval deste ano "está sendo preparado para ser o melhor de todos os tempos". A capital catarinense estará repleta de eventos neste Carnaval, e aqui, trouxemos para você as informações sobre o evento. Também cobrimos aqui os principais eventos de sexta à terça, para você poder curtir o final de semana e só parar depois do feriadão.</p>
+        <p>O transporte público está muito bem preparado para o Carnaval, com esse sábado (18) contando como horário de dia da semana, e contando com 16 mil horários de ônibus a mais. Já a segunda (20) terá horário de sábado.</p>
+        <p>O superintendente de Transportes e Mobilidade, Valci Brasil, relatou que das 18h até a meia noite de sábado, a Ponte Hercílio Luz funcionará apenas para ônibus, no sentido continente-centro. O secretário Municipal de Segurança Pública, Araújo Gomes, contou que a segurança pública vai estar presente em todos os eventos, seja de grande, médio, ou pequeno porte, e que a Guarda Municipal também vai estar nas ruas.</p>
+    </div>
+
+    
+
+<footer>
+    <script language="javascript">
+        if (!document.cookie){
+        setCookie("cookie", "1", 365);
+        document.write("<font face='verdana' size='1'>Suas Visitas : 1</font>");
+        } else {
+        var cont = document.cookie;
+        var dividindo = cont.split("=");
+        //document.write(dividindo[1]);
+        var numero = parseInt(dividindo[1]);
+        var soma = numero + 1;
+        document.write("<font face='verdana' size='1'>Suas Visitas : " + soma + "</font>");
+        setCookie("cookie", soma, 365);
+        }
+    </script>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
